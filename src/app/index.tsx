@@ -1,26 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { globalStyles } from '@/styles/global';
+import { ScrollView, StyleSheet, Text } from 'react-native';
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>MacroZone</Text>
+    <ScrollView style={globalStyles.container}>
+      <Text style={globalStyles.title}>MacroZone</Text>
       <Text style={styles.date}>Monday, March 16</Text>
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#1a1a2e',
-    paddingTop: 60,
-    paddingHorizontal: 20,
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#ffffff',
-  },
   date: {
     fontSize: 14,
     color: '#a0a0b0',
