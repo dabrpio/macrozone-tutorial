@@ -4,7 +4,7 @@ export default function RootLayout() {
   return (
     <Stack
       screenOptions={{
-        headerTitle: 'MacroZone',
+        headerShown: false,
       }}
     />
   );
